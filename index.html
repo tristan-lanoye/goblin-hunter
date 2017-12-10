@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Spectral+SC" rel="stylesheet"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#0f82a3">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="lib/css/reset.min.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script src="lib/js/modernizr-custom.js"></script>
+    <script src="lib/js/smoothscroll.min.js"></script>
+    <title>Goblin Hunter - A HTML5 Game</title>
+</head>
+
+<body>
+    <div class="popup-pause">
+        <span class="popup-pause-resume center-children">Resume</span>
+        <span class="popup-pause-restart center-children">Restart</span>
+        <span class="popup-pause-quit center-children">Quit To Menu</span>
+    </div>
+    <div class="popup-gameover">
+        <span class="popup-gameover-resume center-children">Retry</span>
+        <span class="popup-gameover-quit center-children">Quit To Menu</span>
+        <span class="popup-gameover-time center-children">survived
+            <span class="value"> 0 </span> seconds (best :
+            <span class="record">0</span>)</span>
+        <span class="popup-gameover-kills center-children">
+            <span class="value"> 0 </span> kills (best :
+            <span class="record">0</span>)</span>
+    </div>
+    <div class="popup-winner">
+        <span class="popup-winner-winner center-children">Player
+            <span class="value">0</span>wins !</span>
+        <span class="popup-winner-resume center-children">Restart</span>
+        <span class="popup-winner-quit center-children">Quit To Menu</span>
+    </div>
+
+    <div class="home active-home">
+        <div class="home-credits center-children">
+            <div class="name">tristan lanoye |
+                <a href="#" title="view source">view source on github
+                    <span class="fab fa-github icon"></span>
+                </a>
+            </div>
+        </div>
+        <h1 class="home-title center-children">goblin hunter</h1>
+        <h2 class="home-category center-children">HTML5 Canvas</h2>
+        <div class="home-mode-1 inactive-home-singleplayer center-children">
+            <span>
+                <strong>1</strong> PLAYER (Survival)</span>
+        </div>
+        <div class="home-mode-2 inactive-home-multiplayer center-children">
+            <span>
+                <strong>2</strong> PLAYERS (Versus)</span>
+        </div>
+        <div class="home-icon center-children">
+            <span class="fas fa-chevron-circle-down icon"></span>
+        </div>
+    </div>
+    <div class="options-select-mode active-popup center-children">
+        <span class="options-select-text">Select a mode</span>
+    </div>
+    <div class="options-singleplayer">
+        <span class="options-s-player center-children">Player 1</span>
+        <span class="options-s-select center-children">Select Character</span>
+
+        <div class="options-s-imageknight center-children">
+            <img class="inactive-image" src="images/previewKnight.png" alt="Knight Preview">
+        </div>
+        <div class="options-s-imageskeleton center-children">
+            <img class="inactive-image" src="images/previewSkeleton.png" alt="Skeleton Preview">
+        </div>
+        <span class="options-s-textknight inactive-text center-children">knight</span>
+        <span class="options-s-textskeleton inactive-text center-children">skeleton</span>
+        <h2 class="options-s-controls center-children">Controls</h2>
+        <div class="options-s-movesleft center-children">
+            <ul>
+                <li>jump</li>
+                <li>move right</li>
+                <li>move left</li>
+                <li>strike</li>
+                <li>shoot</li>
+            </ul>
+        </div>
+        <div class="options-s-movesright center-children">
+            <ul>
+                <li>up arrow</li>
+                <li>right arrow</li>
+                <li>left arrow</li>
+                <li>num 2 or left click</li>
+                <li>num 3 or right click</li>
+            </ul>
+        </div>
+        <span class="options-s-pause center-children">(In game,
+            <strong>press "p" to pause</strong>, exit etc.)</span>
+        <span class="options-s-start center-children start-game-singleplayer">Start Game</span>
+    </div>
+    <div class="options-multiplayer">
+        <span class="options-m-player1 center-children">Player 1</span>
+        <span class="options-m-player2 center-children">Player 2</span>
+        <span class="options-m-select center-children">Select Character</span>
+        <div class="options-m-imageknight1 center-children">
+            <img class="inactive-image" src="images/previewKnight.png" alt="Knight Preview">
+        </div>
+        <div class="options-m-imageskeleton1 center-children">
+            <img class="inactive-image" src="images/previewSkeleton.png" alt="Skeleton Preview">
+        </div>
+        <span class="options-m-chartext center-children"> | </span>
+        <div class="options-m-imageknight2 center-children">
+            <img class="inactive-image" src="images/previewKnight.png" alt="Knight Preview">
+        </div>
+        <div class="options-m-imageskeleton2 center-children">
+            <img class="inactive-image" src="images/previewSkeleton.png" alt="Skeleton Preview">
+        </div>
+        <span class="options-m-controls center-children">Controls</span>
+        <div class="options-m-moves1 center-children">
+            <ul>
+                <li>up arrow</li>
+                <li>right arrow</li>
+                <li>left arrow</li>
+                <li>num 2 or left click</li>
+                <li>num 3 or right click</li>
+            </ul>
+        </div>
+        <div class="options-m-movestext center-children">
+            <ul>
+                <li>jump</li>
+                <li>move right</li>
+                <li>move left</li>
+                <li>strike</li>
+                <li>shoot</li>
+            </ul>
+
+        </div>
+        <div class="options-m-moves2 center-children">
+            <ul>
+                <li>z</li>
+                <li>d</li>
+                <li>q</li>
+                <li>g</li>
+                <li>h</li>
+            </ul>
+        </div>
+        <span class="options-m-pause center-children">(In game,
+            <strong>press "p" to pause</strong>, exit etc.)</span>
+        <span class="options-m-start center-children start-game-multiplayer">Start Game</span>
+    </div>
+
+    <canvas class="canvas-game"></canvas>
+    <canvas class="canvas-background active-canvas-background"></canvas>
+
+    <script src="scripts/components/setup.js"></script>
+    <script src="scripts/components/player.js"></script>
+    <script src="scripts/components/heart.js"></script>
+    <script src="scripts/components/tile.js"></script>
+    <script src="scripts/components/enemy.js"></script>
+    <script src="scripts/components/bullet.js"></script>
+    <script src="scripts/components/particle.js"></script>
+    <script src="scripts/background.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/components/events.js"></script>
+</body>
+
+</html>
