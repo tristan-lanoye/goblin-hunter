@@ -3,7 +3,7 @@
 
 Goblin Hunter is a platform game made with HTML5 Canvas. It is meant to be played by one or two players on the same computer. 
 
-The game is hosted on [Github Pages](https://tristan-lanoye.github.io/ "Goblin Hunter")
+The game is hosted on [Github Pages](https://tristan-lanoye.github.io/goblin-hunter "Goblin Hunter")
 
 **_warning_** : *project may throw 404 errors (images not found) if ran locally, but works properly on a server*
 
@@ -11,9 +11,8 @@ The game is hosted on [Github Pages](https://tristan-lanoye.github.io/ "Goblin H
 
 - HTML5, CSS3, JS
 - Sass / Compass
-- ES6 Syntax (Classes)
 
-## Features 
+## Features
 
 ### Homepage
 
@@ -30,4 +29,3 @@ The game is hosted on [Github Pages](https://tristan-lanoye.github.io/ "Goblin H
 - Player can shoot bullets with a bow, strike with a sword
 - Small particles appear when character lands on surface, to give feeling of weight
 - Game keeps track of score and time using Session Storage 
-
