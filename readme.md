@@ -13,6 +13,15 @@ https://tristan-lanoye.github.io/goblin-hunter
 - HTML5, CSS3, JS
 - Sass / Compass
 
+## Installation 
+
+If you want to play with the code :
+
+1. Clone the repo : `git clone https://github.com/tristan-lanoye/goblin-hunter.git`
+2. Change directory : `cd goblin-hunter`
+3. Watch files : `compass watch`
+4. Launch project : `open index.html`
+
 ## Features
 
 ### Homepage
