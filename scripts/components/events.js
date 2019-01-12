@@ -603,16 +603,4 @@ skeletonPreviewM2.addEventListener('click', (e) => {
 
 window.addEventListener('resize', () => {
     resizeCanvas()
-
-    // maxTilesX = Math.floor(canvas.width / 87)
-    // for (let i = 0; i < tiles.length; i++) {
-    //     if (tiles[i].column >= maxTilesX / 3) {
-    //         if (tiles[i].column == Math.floor(maxTilesX / 3)) {
-    //             tiles[i].srcx = 3 * 87
-    //         } else {
-    //             tiles.splice(i, 1)
-    //             i--
-    //         }
-    //     }
-    // }
 })

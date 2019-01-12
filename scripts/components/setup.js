@@ -134,14 +134,14 @@ const bulletRed = new Image()
 const bulletBlue = new Image()
 const heartImage = new Image()
 
-canvasBackground.src = '../../images/background.png'
-spritesheetKnight.src = '../../images/spritesheetKnight.png'
-spritesheetSkeleton.src = '../../images/spritesheetSkeleton.png'
-spritesheetEnemy.src = '../../images/spritesheetEnemy.png'
-spritesheetTiles.src = '../../images/spritesheetTiles.png'
-bulletRed.src = '../../images/bulletred.png'
-bulletBlue.src = '../../images/bulletblue.png'
-heartImage.src = '../../images/heart.png'
+canvasBackground.src = './images/background.png'
+spritesheetKnight.src = './images/spritesheetKnight.png'
+spritesheetSkeleton.src = './images/spritesheetSkeleton.png'
+spritesheetEnemy.src = './images/spritesheetEnemy.png'
+spritesheetTiles.src = './images/spritesheetTiles.png'
+bulletRed.src = './images/bulletred.png'
+bulletBlue.src = './images/bulletblue.png'
+heartImage.src = './images/heart.png'
 
 let mouse = {
     x: 0,
