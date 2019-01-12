@@ -4,7 +4,7 @@ Goblin Hunter is a platform game made with HTML5 Canvas. It is meant to be playe
 
 ## Demo  
 
-https://tristan-lanoye.github.io/goblin-hunter/
+https://www.lab.tristan-lanoye.com/goblin-hunter/
 
 ## Tools
 
