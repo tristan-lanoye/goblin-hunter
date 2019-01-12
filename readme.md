@@ -2,8 +2,6 @@
 
 Goblin Hunter is a platform game made with HTML5 Canvas. It is meant to be played by one or two players on the same computer. 
 
-**_warning_** : *project may throw 404 errors (images not found) if ran locally, but works properly on a server*
-
 ## Demo  
 
 https://tristan-lanoye.github.io/goblin-hunter/
@@ -15,7 +13,7 @@ https://tristan-lanoye.github.io/goblin-hunter/
 
 ## Installation 
 
-If you want to play with the code :
+If you want to play around with the code :
 
 1. Clone the repo : `git clone https://github.com/tristan-lanoye/goblin-hunter.git`
 2. Change directory : `cd goblin-hunter`
